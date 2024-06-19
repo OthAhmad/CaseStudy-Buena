@@ -1,9 +1,17 @@
 import React, { FC } from 'react';
 
 
-interface SummaryProps {}
+interface SummaryProps {
+  formData: FormData;
+}
+interface FormData {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  salary: string;
+}
 
-const Summary: FC<SummaryProps> = () => (
+const Summary: FC<SummaryProps> = ({formData}) => (
   <div>
     Summary Component
   </div>
